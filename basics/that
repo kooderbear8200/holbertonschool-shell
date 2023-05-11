@@ -1,0 +1,17 @@
+Script started on 2023-05-11 09:26:43-07:00 [TERM="xterm" TTY="/dev/pts/57" COLUMNS="81" LINES="19"]
+# ^C
+# ^Z^Z
+# ^[[A^[[A^[[A^[[B^[[B^[[D^[[D                            ^Zcd  ^C
+# cd
+# pwe d
+/root
+# /root
+sh: 4: /root: Permission denied
+# cd root
+sh: 5: cd: can't cd to root
+# ^Z^C
+# ^Z^C
+# ^C
+# 
+
+Script done on 2023-05-11 09:31:18-07:00 [COMMAND_EXIT_CODE="130"]
