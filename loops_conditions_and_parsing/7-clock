@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#the time is
 h=0
 m=0
 while [ $h -le 13 ]
