@@ -1,25 +1,24 @@
 #!/usr/bin/env bash
 # this script is displaying "Best School" 10 times
 count=1
-while [ $count -le 20 ]
+while [ $count -le 20]
 do
 	case $count in
 4)
 	echo "4
-bad luck from China"
-		;;
-9)
-	echo "9 
-bad luck from Japan"
-		;;
+	bad luck from China"
+	;;
+9)	
+	echo "9
+	bad luck from Japan"
+	;;
 17)
-	echo "17 
-bad luck from Italy"
-		;;
-
+	echo "17
+	bad luck from Italy"
+	;;
 *)
 	echo "$count"
-		;;
+	;;
 esac
 count=$((count+1))
 done
