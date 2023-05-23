@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # script that displays to infinity and beyond and i am invincible.
 
-trap "echo i am invincible!!!" SIGTERM
+trap "echo I am invincible!!!" SIGTERM
 x=1
 while [ "$x" -gt 0 ]
 do
