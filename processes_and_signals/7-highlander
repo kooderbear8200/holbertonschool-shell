@@ -5,7 +5,7 @@ trap "echo i am invincible!!!" SIGTERM
 x=1
 while [ "$x" -gt 0 ]
 do
-	echo To infinity and beyond
+	echo "to infinity and beyond"
 	x=$((x+1))
 	sleep 2
 done
