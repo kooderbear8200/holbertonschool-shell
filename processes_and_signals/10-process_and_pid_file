@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#Executing the 10-process_and_pid_file script and killing it with ctrl+c.
+
+pid_file="/var/run/myscript.pid"
+
+# Funtion to handle SIGTERM and SIGQUIT signals
+
+cleanup() {
+        echo "Deleting PID file and terminationg the script"
+        rm "$pid_file"
+        exit
+}
+
+# Funtion to handle SIGINT signal
+handle_interrupt() {
+        echo "Y U no love me?!"
+}
+
+# Register signal handlers
+        trap cleanup SIGTERM SIGQUIT
+        trap handle_interrupt SIGINT
+               echo "I hate the kill command"
+
+
+# Create PID file
+        echo "$$" > "$pid_file"
+
+# Display messages indenfinitly
+        echo "To infinity and beyond!"
+while true
+do
+        sleep 1
+done
